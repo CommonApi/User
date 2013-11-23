@@ -1,17 +1,24 @@
 {
-    "name": "api/user",
-    "description": "Common API for User",
+    "name": "commonapi/user",
+    "description": "Common User Api Interface",
     "keywords": ["api", "CommonApi", "user"],
+    "homepage": "https://github.com/CommonApi/User",
+    "type": "api",
     "license": "MIT",
     "authors": [
         {
             "name": "AmyStephen",
-            "homepage": "http://Molajo.org/"
+            "email": "AmyStephen@gmail.com",
+            "homepage": "http://Molajo.org"
         }
     ],
+    "require": {
+        "php": ">=5.3.10",
+        "commonapi/exception": ">=0.1"
+    },
     "autoload": {
         "psr-0": {
-            "Api\\User\\": ""
+            "CommonApi\\User\\": ""
         }
     }
 }
