@@ -1,0 +1,17 @@
+{
+    "name": "api/user",
+    "description": "Common API for User",
+    "keywords": ["api", "CommonApi", "user"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AmyStephen",
+            "homepage": "http://Molajo.org/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Api\\User\\": ""
+        }
+    }
+}
