@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface RegistrationInterface
 {
@@ -24,7 +24,7 @@ interface RegistrationInterface
      * @param   array $options
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function register($options);
 
@@ -32,7 +32,7 @@ interface RegistrationInterface
      * Determine if this user is registered
      *
      * @return  boolean
-     * @since   1.0
+     * @since   0.1
      */
     public function isRegistered();
 
@@ -42,7 +42,7 @@ interface RegistrationInterface
      * @param   array $options
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function activateRegistration($options);
 
@@ -50,7 +50,7 @@ interface RegistrationInterface
      * Determine if this user registration has been activated
      *
      * @return  boolean
-     * @since   1.0
+     * @since   0.1
      */
     public function isActivated();
 
@@ -60,7 +60,7 @@ interface RegistrationInterface
      * @param   array $options
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function deactivateRegistration($options = array());
 
@@ -70,7 +70,7 @@ interface RegistrationInterface
      * @param   array $options
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function suspendUser($options);
 
@@ -78,7 +78,7 @@ interface RegistrationInterface
      * Determine if this user was suspended
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function isSuspended();
 
@@ -88,7 +88,7 @@ interface RegistrationInterface
      * @param   array $options
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function removeSuspension($options);
 }

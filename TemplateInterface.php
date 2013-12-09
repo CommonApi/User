@@ -16,7 +16,7 @@ use stdClass;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface TemplateInterface
 {
@@ -27,7 +27,7 @@ interface TemplateInterface
      * @param   mixed  $default
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function get($key, $default = null);
 
@@ -38,7 +38,7 @@ interface TemplateInterface
      * @param   mixed  $value
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function set($key, $value = null);
 
@@ -48,7 +48,7 @@ interface TemplateInterface
      * @param   stdClass $data
      *
      * @return  string
-     * @since   1.0
+     * @since   0.1
      */
     public function render(stdClass $data);
 }

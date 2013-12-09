@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface AuthenticationInterface
 {
@@ -24,7 +24,7 @@ interface AuthenticationInterface
      * @param   string $session_id
      *
      * @return  int   $id
-     * @since   1.0
+     * @since   0.1
      */
     public function isGuest($session_id);
 
@@ -37,7 +37,7 @@ interface AuthenticationInterface
      * @param   bool   $remember
      *
      * @return  int     $id
-     * @since   1.0
+     * @since   0.1
      */
     public function login($session_id, $username, $password, $remember = false);
 
@@ -48,7 +48,7 @@ interface AuthenticationInterface
      * @param   string $username
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function isLoggedOn($session_id, $username);
 
@@ -62,7 +62,7 @@ interface AuthenticationInterface
      * @param   bool   $remember
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function changePassword(
         $session_id,
@@ -79,7 +79,7 @@ interface AuthenticationInterface
      * @param   string $session_id
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function requestPasswordReset($session_id, $username);
 
@@ -90,7 +90,7 @@ interface AuthenticationInterface
      * @param   string $session_id
      *
      * @return  null
-     * @since   1.0
+     * @since   0.1
      */
     public function logout($session_id, $username);
 }

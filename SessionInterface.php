@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface SessionInterface
 {
@@ -24,7 +24,7 @@ interface SessionInterface
      * @param   string $key
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function getSession($key);
 
@@ -35,7 +35,7 @@ interface SessionInterface
      * @param   mixed  $value
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function setSession($key, $value);
 
@@ -45,7 +45,7 @@ interface SessionInterface
      * @param   null|string $key
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function deleteSession($key);
 }

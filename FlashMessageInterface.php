@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface FlashMessageInterface
 {
@@ -24,7 +24,7 @@ interface FlashMessageInterface
      * @param   null|string $type (Success, Notice, Warning, Error)
      *
      * @return  array
-     * @since   1.0
+     * @since   0.1
      */
     public function getFlashMessage($type = null);
 
@@ -35,7 +35,7 @@ interface FlashMessageInterface
      * @param   string $message
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setFlashMessage($type, $message);
 
@@ -45,7 +45,7 @@ interface FlashMessageInterface
      * @param   null|string $type
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function deleteFlashMessage($type = null);
 }

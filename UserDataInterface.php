@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface UserDataInterface
 {
@@ -26,7 +26,7 @@ interface UserDataInterface
      * @param   null|string $secondary_key
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function getUserData($key = null, $secondary_key = null);
 
@@ -37,7 +37,7 @@ interface UserDataInterface
      * @param   mixed  $value
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setUserData($key, $value = null);
 
@@ -45,7 +45,7 @@ interface UserDataInterface
      * Save the User
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function updateUser();
 
@@ -53,7 +53,7 @@ interface UserDataInterface
      * Delete the User
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function deleteUser();
 }

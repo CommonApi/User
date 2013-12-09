@@ -14,7 +14,7 @@ namespace CommonApi\User;
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface AuthorisationInterface
 {
@@ -26,7 +26,7 @@ interface AuthorisationInterface
      * @param   string $type
      *
      * @return  bool
-     * @since   1.0
+     * @since   0.1
      */
     public function isUserAuthorised($action_id, $resource_id, $type = 'Catalog');
 }

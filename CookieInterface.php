@@ -16,7 +16,7 @@ namespace CommonApi\User;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface CookieInterface
 {
@@ -26,7 +26,7 @@ interface CookieInterface
      * @param   $name
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function getCookie($name);
 
@@ -42,7 +42,7 @@ interface CookieInterface
      * @param   bool    $http_only
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setCookie(
         $name,
@@ -60,7 +60,7 @@ interface CookieInterface
      * @param   string $name
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function deleteCookie($name);
 
@@ -68,7 +68,7 @@ interface CookieInterface
      * sendCookies
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function sendCookies();
 }
