@@ -4,7 +4,7 @@
  *
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2013 Common Api. All rights reserved.
+ * @copyright  2014 Amy Stephen. All rights reserved.
  */
 namespace CommonApi\User;
 
@@ -15,8 +15,8 @@ namespace CommonApi\User;
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2013 Common Api. All rights reserved.
- * @since      0.1
+ * @copyright  2014 Amy Stephen. All rights reserved.
+ * @since      1.0
  */
 interface CookieInterface
 {

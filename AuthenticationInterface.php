@@ -3,7 +3,7 @@
  * Authentication Interface
  *
  * @package    User
- * @copyright  2013 Common Api. All rights reserved.
+ * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 namespace CommonApi\User;
@@ -13,21 +13,11 @@ namespace CommonApi\User;
  *
  * @package    User
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2013 Common Api. All rights reserved.
- * @since      0.1
+ * @copyright  2014 Amy Stephen. All rights reserved.
+ * @since      1.0
  */
 interface AuthenticationInterface
 {
-    /**
-     * Guest - verify the Session
-     *
-     * @param   string $session_id
-     *
-     * @return  int   $id
-     * @since   0.1
-     */
-    public function isGuest($session_id);
-
     /**
      * Login - verify username and password, handle remember request if value is true
      *
@@ -40,6 +30,16 @@ interface AuthenticationInterface
      * @since   0.1
      */
     public function login($session_id, $username, $password, $remember = false);
+
+    /**
+     * Guest - verify the Session
+     *
+     * @param   string $session_id
+     *
+     * @return  int   $id
+     * @since   0.1
+     */
+    public function isGuest($session_id);
 
     /**
      * Verify if the User is Logged On
