@@ -19,6 +19,16 @@ namespace CommonApi\User;
 interface AuthenticationInterface
 {
     /**
+     * Guest - verify the Session
+     *
+     * @param   string $session_id
+     *
+     * @return  int   $id
+     * @since   0.1
+     */
+    public function isGuest($session_id);
+
+    /**
      * Login - verify username and password, handle remember request if value is true
      *
      * @param   string $session_id
@@ -30,16 +40,6 @@ interface AuthenticationInterface
      * @since   0.1
      */
     public function login($session_id, $username, $password, $remember = false);
-
-    /**
-     * Guest - verify the Session
-     *
-     * @param   string $session_id
-     *
-     * @return  int   $id
-     * @since   0.1
-     */
-    public function isGuest($session_id);
 
     /**
      * Verify if the User is Logged On
