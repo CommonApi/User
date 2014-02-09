@@ -24,7 +24,7 @@ interface FlashMessageInterface
      * @param   null|string $type (Success, Notice, Warning, Error)
      *
      * @return  array
-     * @since   0.1
+     * @since   1.0
      */
     public function getFlashMessage($type = null);
 
@@ -35,7 +35,7 @@ interface FlashMessageInterface
      * @param   string $message
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function setFlashMessage($type, $message);
 
@@ -45,7 +45,7 @@ interface FlashMessageInterface
      * @param   null|string $type
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function deleteFlashMessage($type = null);
 }

@@ -26,7 +26,7 @@ interface EncryptInterface
      * @param   string $input
      *
      * @return  string
-     * @since   0.1
+     * @since   1.0
      */
     public function createHashString($input);
 
@@ -39,7 +39,7 @@ interface EncryptInterface
      * @param   string $hash
      *
      * @return  boolean
-     * @since   0.1
+     * @since   1.0
      */
     public function verifyHashString($input, $hash);
 
@@ -49,7 +49,7 @@ interface EncryptInterface
      * @param   int $length
      *
      * @return  boolean
-     * @since   0.1
+     * @since   1.0
      */
     public function getRandomToken($length = 128);
 }

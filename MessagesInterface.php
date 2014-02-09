@@ -26,7 +26,7 @@ interface MessagesInterface
      * @param   string $type (Success, Notice, Warning, Error)
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function setFlashMessage($message_id, array $values = array(), $type = 'Error');
 
@@ -38,7 +38,7 @@ interface MessagesInterface
      * @param   string $exception
      *
      * @return  null
-     * @since   0.1
+     * @since   1.0
      */
     public function throwException($message_id, array $values = array(), $exception = 'SystemException');
 }
