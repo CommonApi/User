@@ -18,8 +18,5 @@ namespace CommonApi\User;
  */
 interface UserInterface
 {
-    //interface UserInterface extends UserDataInterface, AuthorisationInterface, FlashMessageInterface,
-//    SessionInterface, CookieInterface
 
 }
-

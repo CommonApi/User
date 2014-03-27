@@ -19,41 +19,48 @@ namespace CommonApi\User;
 interface UserDataInterface
 {
     /**
-     * Get the current value (or default) of the specified key or all User Data for null key
-     * The secondary key can be used to designate a customfield group or child object
+     * Get user data using a value for id, username, email or initialize new user
      *
+     * @param   null|string $value
      * @param   null|string $key
-     * @param   null|string $secondary_key
      *
-     * @return  mixed
-     * @since   1.0
+     * @return  $this
      */
-    public function getUserData($key = null, $secondary_key = null);
+    public function load($value = null, $key = 'username');
 
     /**
-     * Set the value of a specified key
+     * Get User Data
      *
-     * @param   string $key
-     * @param   mixed  $value
+     * @return  object
+     * @since   1.0
+     */
+    public function getUserData();
+
+    /**
+     * Insert User
+     *
+     * @param   array $data
+     *
+     * @return  object
+     * @since   1.0
+     */
+    public function insertUserData(array $data = array());
+
+    /**
+     * Update User Data for loaded User
+     *
+     * @param   array $updates
+     *
+     * @return  object
+     * @since   1.0
+     */
+    public function updateUserData(array $updates = array());
+
+    /**
+     * Delete User Data
      *
      * @return  $this
      * @since   1.0
      */
-    public function setUserData($key, $value = null);
-
-    /**
-     * Save the User
-     *
-     * @return  $this
-     * @since   1.0
-     */
-    public function updateUser();
-
-    /**
-     * Delete the User
-     *
-     * @return  $this
-     * @since   1.0
-     */
-    public function deleteUser();
+    public function deleteUserData();
 }
