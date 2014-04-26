@@ -29,7 +29,7 @@ interface MailerInterface
      */
     public function render(
         $options = array(),
-        Templateinterface $template = null
+        TemplateInterface $template = null
     );
 
     /**
