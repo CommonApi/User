@@ -22,7 +22,7 @@ interface MailerInterface
      * Set the Option Values, Initiate Rendering, Send
      *
      * @param   string    $template
-     * @param   stdClass  $input_data
+     * @param   object    $input_data
      *
      * @return  $this
      * @since   1.0
