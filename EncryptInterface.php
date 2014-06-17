@@ -42,14 +42,4 @@ interface EncryptInterface
      * @since   1.0
      */
     public function verifyHashString($input, $hash);
-
-    /**
-     * Creates random string using base64 characters (a-zA-Z0-9./) for generating tokens
-     *
-     * @param   int $length
-     *
-     * @return  boolean
-     * @since   1.0
-     */
-    public function getRandomToken($length = 128);
 }
