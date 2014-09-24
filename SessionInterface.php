@@ -24,7 +24,7 @@ interface SessionInterface
      * @param   string $key
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function getSession($key);
 
@@ -35,7 +35,7 @@ interface SessionInterface
      * @param   mixed  $value
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function setSession($key, $value);
 
@@ -45,7 +45,7 @@ interface SessionInterface
      * @param   null|string $key
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function deleteSession($key);
 }

@@ -26,7 +26,7 @@ interface CookieInterface
      * @param   $name
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function getCookie($name);
 
@@ -42,7 +42,7 @@ interface CookieInterface
      * @param   bool    $http_only
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function setCookie(
         $name,
@@ -60,7 +60,7 @@ interface CookieInterface
      * @param   string $name
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function deleteCookie($name);
 
@@ -68,7 +68,7 @@ interface CookieInterface
      * sendCookies
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function sendCookies();
 }

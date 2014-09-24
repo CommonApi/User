@@ -32,7 +32,7 @@ interface UserDataInterface
      * Get User Data
      *
      * @return  object
-     * @since   1.0
+     * @since   1.0.0
      */
     public function getUserData();
 
@@ -42,7 +42,7 @@ interface UserDataInterface
      * @param   array $data
      *
      * @return  object
-     * @since   1.0
+     * @since   1.0.0
      */
     public function insertUserData(array $data = array());
 
@@ -52,7 +52,7 @@ interface UserDataInterface
      * @param   array $updates
      *
      * @return  object
-     * @since   1.0
+     * @since   1.0.0
      */
     public function updateUserData(array $updates = array());
 
@@ -60,7 +60,7 @@ interface UserDataInterface
      * Delete User Data
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function deleteUserData();
 }

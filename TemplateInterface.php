@@ -27,7 +27,7 @@ interface TemplateInterface
      * @param   mixed  $default
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function get($key, $default = null);
 
@@ -38,7 +38,7 @@ interface TemplateInterface
      * @param   mixed  $value
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function set($key, $value = null);
 
@@ -48,7 +48,7 @@ interface TemplateInterface
      * @param   stdClass $data
      *
      * @return  string
-     * @since   1.0
+     * @since   1.0.0
      */
     public function render(stdClass $data);
 }

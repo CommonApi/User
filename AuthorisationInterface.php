@@ -26,7 +26,7 @@ interface AuthorisationInterface
      * @param   string $type
      *
      * @return  bool
-     * @since   1.0
+     * @since   1.0.0
      */
     public function isUserAuthorised($action_id, $resource_id, $type = 'Catalog');
 }

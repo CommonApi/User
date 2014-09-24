@@ -21,22 +21,11 @@ interface MailerInterface
     /**
      * Set the Option Values, Initiate Rendering, Send
      *
-     * @param   array             $options
-     * @param   TemplateInterface $template
+     * @param   string $template
+     * @param   object $input_data
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
-    public function render(
-        $options = array(),
-        Templateinterface $template = null
-    );
-
-    /**
-     * Send Email
-     *
-     * @return  $this
-     * @since   1.0
-     */
-    public function send();
+    public function send($template, $input_data);
 }

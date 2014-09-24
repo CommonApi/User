@@ -19,26 +19,36 @@ namespace CommonApi\User;
 interface MessagesInterface
 {
     /**
-     * Store Flash (User) Messages in Session for presentation after redirect
+     * Set Message
+     *
+     * @param   int    $message_id
+     * @param   string $message
+     *
+     * @since   1.0.0
+     * @return  $this
+     */
+    public function setMessage($message_id, $message);
+
+    /**
+     * Store Flash (User) Messages in Flashmessage for presentation after redirect
      *
      * @param   int    $message_id
      * @param   array  $values
      * @param   string $type (Success, Notice, Warning, Error)
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
-    public function setFlashMessage($message_id, array $values = array(), $type = 'Error');
+    public function setFlashmessage($message_id, array $values = array(), $type = 'Error');
 
     /**
-     * Format Exception Message and throw the Exception
+     * Get Message
      *
-     * @param   int    $message_id
-     * @param   array  $values
-     * @param   string $exception
+     * @param   int   $message_id
+     * @param   array $values
      *
-     * @return  null
-     * @since   1.0
+     * @since   1.0.0
+     * @return  string
      */
-    public function throwException($message_id, array $values = array(), $exception = 'SystemException');
+    public function getMessage($message_id = 0, array $values = array());
 }
