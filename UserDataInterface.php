@@ -19,48 +19,48 @@ namespace CommonApi\User;
 interface UserDataInterface
 {
     /**
-     * Get user data using a value for id, username, email or initialize new user
+     * Set User Data for id, username, email or Initialise User
      *
-     * @param   null|string $value
      * @param   null|string $key
+     * @param   null|string $value
      *
      * @return  $this
      */
-    public function load($value = null, $key = 'username');
+    public function load($key = 'username', $value = null);
 
     /**
-     * Get User Data
-     *
-     * @return  object
-     * @since   1.0.0
-     */
-    public function getUserData();
-
-    /**
-     * Insert User
+     * Create User
      *
      * @param   array $data
      *
-     * @return  object
+     * @return  $this
      * @since   1.0.0
      */
-    public function insertUserData(array $data = array());
+    public function createUser(array $data = array());
 
     /**
-     * Update User Data for loaded User
-     *
-     * @param   array $updates
+     * Return data for current user
      *
      * @return  object
      * @since   1.0.0
      */
-    public function updateUserData(array $updates = array());
+    public function readUser();
 
     /**
-     * Delete User Data
+     * Update Current User
+     *
+     * @param   array  $data
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function deleteUserData();
+    public function updateUser(array $data = array());
+
+    /**
+     * Delete Current User
+     *
+     * @return  object
+     * @since   1.0.0
+     */
+    public function deleteUser();
 }
